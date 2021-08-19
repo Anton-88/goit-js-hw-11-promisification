@@ -8,7 +8,7 @@ const users = [
 // task 1
 const delay = ms => {
   return new Promise((resolve, reject) => {
-    setTimeout(logger(ms), ms);
+    setTimeout(resolve(ms), ms);
   });
 };
 
